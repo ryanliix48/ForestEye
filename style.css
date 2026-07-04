@@ -1,1 +1,142 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Kanit',sans-serif;
+}
 
+body{
+    background:#0d1b16;
+    color:white;
+}
+
+header{
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 80px;
+    background:rgba(0,0,0,.45);
+    backdrop-filter:blur(12px);
+    z-index:1000;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:#7CFC00;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:30px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#7CFC00;
+}
+
+.hero{
+    height:100vh;
+    background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.65)),
+    url("https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1800&q=80");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero-content h1{
+    font-size:80px;
+    margin-bottom:10px;
+}
+
+.hero-content h2{
+    color:#8fff71;
+    margin-bottom:25px;
+    font-weight:400;
+}
+
+.hero-content p{
+    font-size:22px;
+    line-height:1.8;
+    margin-bottom:40px;
+}
+
+.btn{
+    display:inline-block;
+    background:#3bb54a;
+    color:white;
+    padding:18px 45px;
+    border-radius:50px;
+    text-decoration:none;
+    font-size:20px;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+    background:#58d867;
+    box-shadow:0 0 25px #58d867;
+}
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+    padding:80px;
+    background:#12231d;
+}
+
+.card{
+    background:#183129;
+    border-radius:18px;
+    padding:35px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 20px rgba(0,255,100,.35);
+}
+
+.card h3{
+    color:#7CFC00;
+    margin-bottom:15px;
+}
+
+.card p{
+    line-height:1.7;
+}
+
+@media(max-width:768px){
+
+header{
+padding:20px;
+flex-direction:column;
+}
+
+nav{
+margin-top:15px;
+}
+
+.hero-content h1{
+font-size:55px;
+}
+
+.hero-content p{
+font-size:18px;
+}
+
+.features{
+padding:40px 20px;
+}
+
+}
