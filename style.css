@@ -140,3 +140,62 @@ padding:40px 20px;
 }
 
 }
+.dashboard{
+
+padding:100px 80px;
+
+background:#0f1815;
+
+text-align:center;
+
+}
+
+.dashboard h2{
+
+font-size:45px;
+
+margin-bottom:50px;
+
+color:#7CFC00;
+
+}
+
+.dashboard-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:30px;
+
+}
+
+.status-card{
+
+background:#183129;
+
+padding:35px;
+
+border-radius:20px;
+
+transition:.35s;
+
+}
+
+.status-card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 0 30px rgba(0,255,100,.35);
+
+}
+
+.status-card h1{
+
+font-size:50px;
+
+margin:20px 0;
+
+color:#7CFC00;
+
+}
